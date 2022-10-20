@@ -9,7 +9,7 @@ cuando meta un número negativo.
 
 
 
-CON BUCLE D0-WHILE
+//CON BUCLE D0-WHILE
 /*
 import java.util.Scanner;
 public class Cap5Ejercicio10 {

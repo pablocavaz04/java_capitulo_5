@@ -12,12 +12,13 @@ public class Cap5Ejercicio07 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int passwd = 2004;
-        for (int i=1; i<=4; i++){
+        boolean acierto = false;
+        for (int i=1; i<=4 && !acierto; i++){
             System.out.println("Introduzca la contraseña: ");
         int try_ = sc.nextInt();
             if (try_ == passwd){
                 System.out.println("La caja fuerte se ha abierto correctamente!!!");
-                break;
+                acierto = true;
             }else{
                 System.out.println("Lo siento, esa no es la combinación");
             }
