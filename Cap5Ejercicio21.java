@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Cap5Ejercicio21 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        float i = 0;
+        int i = 0;
         float par = 0;
         float impar = 0;
         float num = 1;
