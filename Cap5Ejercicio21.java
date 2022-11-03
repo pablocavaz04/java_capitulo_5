@@ -9,24 +9,24 @@ public class Cap5Ejercicio21 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int i = 0;
-        float par = 0;
-        float impar = 0;
-        float num = 1;
+        int par = 0;
+        int impar = 0;
+        int num = 1;
         int contimpar = 0;
         while(num > 0){
-            i++;
             System.out.print("Introduce un numero: ");
             num = sc.nextInt();
-            if ((num/2)!=0){
+            if ((num%2)!=0){
                 contimpar++;
-                impar=impar+num;
+                impar+=num;
             }else{
                 if(num>par){
                     par=num;
                 }
             }
+            i++;
         }
-        System.out.println("La cantidad de numeros introducidos es:"+i);
+        System.out.println("La cantidad de numeros introducidos es:"+(i-1));
         System.out.println("La media de los numeros impares es :"+(impar/contimpar));
         System.out.println("El numero par introducido mas grande es: "+par);
     }
