@@ -1,5 +1,6 @@
 /*
  * Realiza un programa que pinte una pirámide por pantalla. La altura se debe pedir por teclado. El carácter con el que se pinta la pirámide también se debe pedir por teclado.
+ * Author: Pablo Camino Vázquez
  */
 import java.util.Scanner;
 public class Cap5Ejercicio19 {
@@ -9,15 +10,14 @@ public static void main(String[] args) {
         String caracter = sc.nextLine();
         System.out.println("Introduzca la altura de la pirámide: ");
         int altura = sc.nextInt();
-        for( int i = 1 ; i <= altura ; i++ ){
-            for ( int espacio = 1 ; espacio <= altura - i ; espacio++ ) {
+        for (int i=1;i<=altura;i++){
+            for(int espacio=altura-i;espacio>=0;espacio--){
                 System.out.print(" ");
+            };
+            for(int car=1;car<=((2*i)-1);car++){
+                System.out.print(caracter);
             }
-            for ( int i2 = 1 ; i2 <= i ; i2++ ){
-                System.out.print(" "+caracter);
-            }
-            System.out.println(" ");
+            System.out.println("");
         }
-        sc.close();
-} 
+    } 
 }
