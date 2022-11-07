@@ -10,11 +10,9 @@ import java.util.Scanner;
 public class Cap5Ejercicio23 {
     public static void main(String args []){
         Scanner sc= new Scanner(System.in);
-
         float suma=0;
         float n;
         float cont = 0;
-
         do {
             System.out.print("Dime un número para añadirlo a la suma: ");
             n =sc.nextFloat();
