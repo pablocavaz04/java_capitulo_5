@@ -16,7 +16,6 @@ public class Cap5Ejercicio49 {
         int suma = 0;
         boolean esprimo = false;
         int contador = 0;
-
         
         while (!esprimo){
             System.out.print("Dime un número: ");
